@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/border3"
+    tools:context="com.example.sakshi.retrieval.BillBarInput"
+     >
+
+
+    <Button
+        android:text="Continue"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/estBtn"
+        android:background="@drawable/oval2"
+        android:textColor="#ffffff"
+        android:layout_alignTop="@+id/estBill"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="78dp" />
+
+    <EditText
+        android:id="@+id/estBill"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:ems="10"
+        android:hint="Enter desired Bill"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="200dp"
+        android:layout_height="150dp"
+        android:text="Enter Bill You want to Pay this Month and We will show you how many hours you should use your appliances"
+        android:textStyle="italic"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/estBill"
+        android:textColor="#800000"
+        android:layout_marginTop="95dp" />
+
+
+</RelativeLayout>

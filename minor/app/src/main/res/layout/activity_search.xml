@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d3d3d3"
+    tools:context="com.example.sakshi.retrieval.SearchActivity">
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="150dp"
+        android:background="@drawable/oval"
+        android:text="OK"
+        android:layout_alignParentBottom="true" />
+
+
+    <EditText
+        android:id="@+id/search_app"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textColor="@color/colorPrimary"
+        android:textSize="20dp"
+        android:hint="Appliance"
+        android:textStyle="italic"
+        android:inputType="text"
+        android:layout_marginStart="50dp"
+        android:layout_above="@+id/button4"
+        android:layout_alignStart="@+id/LevTxt"
+        android:layout_marginBottom="46dp" />
+    <TextView
+        android:id="@+id/LevTxt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="1dp"
+        android:layout_marginBottom="11dp"
+        android:textStyle="italic"
+        android:fontFamily="cursive"
+        android:textSize="35dp"
+        android:textColor="@color/colorPrimary"
+        android:layout_above="@+id/button4" />
+
+    <TimePicker
+        android:id="@+id/timePicker2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/search_app" />
+
+
+</RelativeLayout>

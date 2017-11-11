@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_shoppy_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/back2"
+    tools:context="com.example.sakshi.retrieval.Shoppy2">
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:inputType="textPersonName"
+        android:ems="10"
+        android:hint="Enter Id of 1st product"
+        android:layout_marginTop="27dp"
+        android:textColor="@color/colorAccent"
+        android:id="@+id/pro2"
+        android:layout_below="@+id/pro1tv"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp" />
+    <Button
+        android:text="Okay"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/okBtn2"
+        android:background="@drawable/oval"
+        android:layout_below="@+id/pro2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="77dp"
+        android:text="Enter next Id"
+        android:textStyle="italic"
+        android:fontFamily="cursive"
+        android:textColor="#800080"
+        android:textSize="50dp"
+        android:id="@+id/pro1tv" />
+
+    <Button
+        android:id="@+id/QRbtn2"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:background="@drawable/oval"
+        android:layout_marginRight="13dp"
+        android:text="SmartSearch"
+        android:layout_below="@+id/textView3"
+        android:layout_alignStart="@+id/okBtn2"
+        android:layout_marginTop="17dp" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/okBtn2"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="47dp"
+        android:text="OR" />
+</RelativeLayout>

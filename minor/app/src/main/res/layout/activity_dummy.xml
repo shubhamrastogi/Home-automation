@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_dummy"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.sakshi.retrieval.dummyActivity">
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="35dp"
+        android:textOn="light1 on"
+        android:textOff="light1 off"
+        android:onClick="changeState"
+        android:id="@+id/toggleButton" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toggleButton"
+        android:layout_toEndOf="@+id/toggleButton"
+        android:layout_marginStart="39dp"
+        android:textOn="light2 on"
+        android:textOff="light2 off"
+        android:onClick="changeState2"
+        android:id="@+id/toggleButton2" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toggleButton2"
+        android:layout_alignParentEnd="true"
+        android:textOn="fan1 on"
+        android:textOff="fan1 off"
+        android:onClick="changeState3"
+        android:id="@+id/toggleButton3" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButton"
+        android:layout_alignStart="@+id/toggleButton"
+        android:layout_marginTop="47dp"
+        android:textOn="ac1 on"
+        android:textOff="ac1off"
+        android:onClick="changeState4"
+        android:id="@+id/toggleButton4" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/toggleButton4"
+        android:layout_alignEnd="@+id/toggleButton2"
+        android:textOn="fridge on"
+        android:textOff="fridge off"
+        android:onClick="changeState5"
+        android:id="@+id/toggleButton5" />
+
+    <ToggleButton
+        android:text="ToggleButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/toggleButton5"
+        android:layout_alignStart="@+id/toggleButton3"
+        android:layout_marginStart="11dp"
+        android:textOn="oven on"
+        android:textOff="oven off"
+        android:onClick="changeState6"
+        android:id="@+id/toggleButton6" />
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButton6"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="135dp"
+        android:id="@+id/t" />
+
+    <Button
+        android:text="smartshop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/t"
+        android:layout_toEndOf="@+id/toggleButton4"
+        android:layout_marginBottom="24dp"
+        android:id="@+id/button2"
+        />
+
+</RelativeLayout>
